@@ -1,0 +1,32 @@
+pipeline
+{
+  agent any 
+     stages
+      {
+          stage ('continous download')
+          {
+              steps
+              {
+                 echo "continous download"
+              }
+          }
+          
+         stage ('continous build')
+          {
+              steps
+              {
+                  echo "continous build"
+              }
+          }
+   
+     stage ('continous testing')
+      {
+           steps
+           {
+               echo "continous testing"
+           }
+       }
+          
+          
+      }
+   } 
